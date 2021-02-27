@@ -1,18 +1,10 @@
 import React from "react";
 
-const styles = {
-    img: {
-        height: "auto",
-        margin: 20,
-        display: "block",
-        justifyContent: "center",
-        padding: "20px"
-    }
-}
+
 function Image(props) {
     return (
         <>
-            <img src={props.src} className="img-fluid" alt={props.alt} style={styles.img} />
+            <img style= {{maxWidth: 900}}src={props.src} className="mx-auto d-block" alt={props.alt}/>
         </>
     )
 }

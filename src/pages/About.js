@@ -3,23 +3,20 @@ import { Link, useLocation } from "react-router-dom";
 import Image from "../components/Image";
 
 const styles = {
-    container:{
-        display: "block",
-        justifyContent: "center",
-        margin: "auto",
-        alignItems: "center"
-
+    container: {
+        padding: 30
     },
     section:{
         textAlign: "center",
         padding: 20,
         marginBottom: 30
     }
+ 
 }
 function About(){
 return(
     <>
-    <div className= "container" style = {styles.div}>
+    <div style = {styles.container} className= "container mx-auto d-block">
     <Image src = "https://thehappypuppysite.com/wp-content/uploads/2018/02/bloodhound-header.jpg" alt ="dog"/>
     <section style = {styles.section}>
         Pupster is an app to friend your favorite dogs. To get started, navigate to the Discover page. 
