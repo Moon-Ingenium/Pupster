@@ -1,9 +1,12 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import SearchForm from "../components/SearchForm";
+
+
 
 function Search(){
 return(
     <>
+    <SearchForm />
     </>
 )
 }
