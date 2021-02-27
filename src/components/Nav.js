@@ -7,12 +7,12 @@ function Nav() {
         <>
             <nav className="navbar navbar-light bg-light">
                 <div className="container">
-                <Link to="/" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
+                <Link to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
                         Home
                     </Link>
                     <ul className="nav nav-tabs">
                         <li className="nav-item">
-                            <Link to="/" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
+                            <Link to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
                                 About
         </Link>
                         </li>
