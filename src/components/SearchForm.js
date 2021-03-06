@@ -1,4 +1,4 @@
-import {React, useState }from "react";
+import {React}from "react";
 import Jumbotron from "./Jumbotron";
 
 const styles = {
@@ -8,21 +8,26 @@ const styles = {
     }
 }
 
-function SearchForm(){
+
+function SearchForm(props){
 return(
     <>
     <Jumbotron>Search By Breed</Jumbotron>
     <div style = {styles.container} className = "container">
         
     <form className="form">
+      <label>Breed Name: </label>
           <input
-            // value={firstName}
+            value={props.search}
             name="breed"
             // onChange={handleInputChange}
             type="text"
             placeholder="Search Breed"
+            id ="breed"
           />
-          <button className = "btn">Submit</button>
+          <datalist id = "breed">{props.breeds.map(breed=> (<option value={breed} key ={breed} />))} </datalist>
+          <button type = "submit" onClick = {props.handleSubmit}
+           className = "btn">Submit</button>
         </form>
         </div>
       </>
