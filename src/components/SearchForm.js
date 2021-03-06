@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState }from "react";
 import Jumbotron from "./Jumbotron";
 
 const styles = {
@@ -7,6 +7,7 @@ const styles = {
   
     }
 }
+
 function SearchForm(){
 return(
     <>
