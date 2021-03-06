@@ -1,4 +1,4 @@
-import {React}from "react";
+import React from "react";
 import Jumbotron from "./Jumbotron";
 
 const styles = {
@@ -20,7 +20,7 @@ return(
           <input
             value={props.search}
             name="breed"
-            // onChange={handleInputChange}
+            onChange={props.handleInputChange}
             type="text"
             placeholder="Search Breed"
             id ="breed"
