@@ -8,6 +8,6 @@ export default {
         return axios.get("https://dog.ceo/api/breed/" + breed+ "/images");
     },
     generateBaseBreeds: function(){
-        return axios.get("https://dog.ceo/api/breeds/list/all");
+        return axios.get("https://dog.ceo/api/breeds/list");
     }
 }

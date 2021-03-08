@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import Image from "../components/Image";
 
 const styles = {
@@ -12,6 +11,8 @@ const styles = {
 }
 
 function Discover(){
+    const [number, setnumber] = useState(0);
+
 return(
     <>
     <div className = "row">
@@ -19,7 +20,7 @@ return(
         <h1 style = {{textAlign : "center"}}>Make New Pals</h1>
         <h3 style = {{textAlign : "center"}}>Thumbs up on any pups you'd like to meet!</h3>
         <Image src = "https://via.placeholder.com/300" alt ="placeholder"/>
-        <h1 style = {{textAlign : "center"}} >Made Friendswith 0 pups so far!</h1>
+        <h1 style = {{textAlign : "center"}} >Made Friends with {number} pups so far!</h1>
     </div>
     </div>
     </>
