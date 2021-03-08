@@ -9,11 +9,11 @@ const styles= {
         color: "black",
     }
 }
-function Jumbotron(props){
+function Jumbotron(){
 return(
 <div style ={styles.jumbotron} className="jumbotron jumbotron-fluid">
   <div className="container">
-    <h1 style = {styles.h1} className="text">{props.children}</h1> 
+    <h1 style = {styles.h1} className="text">Search By Breed</h1> 
   </div>
 </div>
 

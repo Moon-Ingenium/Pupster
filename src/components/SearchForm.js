@@ -1,5 +1,5 @@
 import React from "react";
-import Jumbotron from "./Jumbotron";
+
 
 const styles = {
   container: {
@@ -11,11 +11,9 @@ const styles = {
 function SearchForm(props) {
   return (
     <>
-      <Jumbotron>Search By Breed</Jumbotron>
       <div style={styles.container} className="container">
-
         <form className="form" >
-          <label>Breed Name: </label>
+          <label style = {{padding: 20}}> Breed Name: </label>
           <input
             value={props.breed}
             name="breed"

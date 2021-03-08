@@ -4,11 +4,13 @@ function SearchResults(props) {
 
     return (
         <>
-        <ul className="list-group search-results">
-            {props.results.map(result => (
-                <li className="list-group-item" key={result}><img className="img-fluid" src={result} alt="dog" /></li>
-            ))}
-        </ul>
+
+            <ul className="list-group search-results">
+                {props.results.map(result => (
+                    <li className="list-group-item" key={result}><img className="mx-auto d-block" style={{maxWidth: 300, maxHeight: "auto"}} src={result} alt="dog" /></li>
+                ))}
+            </ul>
+
         </>
     )
 }
