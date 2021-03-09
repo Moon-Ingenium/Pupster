@@ -4,6 +4,7 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import Container from "../components/Container";
 import Button from "../components/Button";
+import Alert from "../components/Alert";
 import API from "../utils/API";
 
 const styles = {
@@ -38,19 +39,29 @@ function Discover() {
         })
     }
     ;
+    let alertTrue = match;
+    const renderAlert = () => {
+        if (match) {
+            return <Alert class="alert alert-success" >Yey you matched</Alert>
+        } else {
+            return <Alert class="alert alert-danger">Boo You're a Monster!</Alert>
+        }
 
+    }
     return (
+
         <>
             <Row>
                 <Col size="12">
                     <Container style={styles.container}>
                         <h1 style={{ textAlign: "center" }}>Make New Pals</h1>
                         <h3 style={{ textAlign: "center" }}>Thumbs up on any pups you'd like to meet!</h3>
+                        {renderAlert()}
                         <Image style={{ maxWidth: 300, maxHeight: "auto" }} src={image} alt="dog" />
                         <Button data-value="picked" onClick={handleChange}>Like</Button>
                         <Button data-value="dislike" onClick={handleChange} >Dislike</Button>
                         <h1 style={{ textAlign: "center" }} >Made Friends with {number} pups so far!</h1>
-                        
+
                     </Container>
                 </Col>
             </Row>
