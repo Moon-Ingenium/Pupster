@@ -5,9 +5,9 @@ function Nav() {
     const location = useLocation();
     return (
         <>
-            <nav className="navbar navbar-light bg-light">
+            <nav className="navbar">
                 <div className="container">
-                <Link to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
+                <Link style = {{fontSize: "50px"}}to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
                         Pupster
                     </Link>
                     <ul className="nav nav-tabs">

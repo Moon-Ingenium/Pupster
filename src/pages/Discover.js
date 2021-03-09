@@ -47,8 +47,8 @@ function Discover() {
                         <h1 style={{ textAlign: "center" }}>Make New Pals</h1>
                         <h3 style={{ textAlign: "center" }}>Thumbs up on any pups you'd like to meet!</h3>
                         <Image style={{ maxWidth: 300, maxHeight: "auto" }} src={image} alt="dog" />
-                        <Button style = {{display: "flex", justifyContent: "center", alignItems: "center", padding: 20}}data-value="picked" onClick={handleChange}>thumbs up</Button>
-                        <Button style = {{display: "flex", justifyContent: "center", alignItems: "center", padding: 20}}data-value="dislike" onClick={handleChange} >thumbs down </Button>
+                        <Button data-value="picked" onClick={handleChange}>Like</Button>
+                        <Button data-value="dislike" onClick={handleChange} >Dislike</Button>
                         <h1 style={{ textAlign: "center" }} >Made Friends with {number} pups so far!</h1>
                         
                     </Container>
