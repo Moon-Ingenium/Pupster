@@ -11,7 +11,7 @@ function App() {
     <Router>
       <>
       <Nav/>
-<Route exact path = "/" component = {About}/>
+<Route exact path = "/pupster" component = {About}/>
 <Route exact path = "/about" component = {About}/>
 <Route exact path = "/search" component = {Search}/>
 <Route exact path = "/discover" component = {Discover}/>
