@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Search from "./pages/Search";
 import Discover from "./pages/Discover";
 import Nav from "./components/Nav";
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
 <Route exact path = "/search" component = {Search}/>
 <Route exact path = "/discover" component = {Discover}/>
 </>
+<Footer/>
 </Router>
   );
 }

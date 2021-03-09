@@ -18,7 +18,7 @@ const styles = {
 function Search() {
     const [breed, setBreed] = useState("");
     const [results, setResults] = useState([]);
-    const debouncedSearchTerm = useDebounce(breed, 1000);
+    const debouncedSearchTerm = useDebounce(breed, 500);
  
     const handleChange = e => {
         setBreed(e.target.value);
@@ -29,7 +29,7 @@ function Search() {
             return;
         }
         if (debouncedSearchTerm) {
-            API.generateSearch(breed).then((res) => {
+            API.generateSearch(breed.toLowerCase()).then((res) => {
                 if (!res) {
                     throw new Error("No Results Found")
                 }
