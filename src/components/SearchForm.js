@@ -22,10 +22,6 @@ function SearchForm(props) {
             placeholder="Search Breed"
             id="breed"
           />
-
-          <datalist id="breed"> </datalist>
-          <button type="submit" 
-            className="btn" onClick = {props.handleSubmit} >Submit</button>
         </form>
       </div>
     </>
