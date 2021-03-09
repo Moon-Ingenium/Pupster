@@ -16,7 +16,7 @@ const styles = {
 }
 
 function Search() {
-    const [breed, setBreed] = useState("hound");
+    const [breed, setBreed] = useState("");
     const [results, setResults] = useState([]);
     const debouncedSearchTerm = useDebounce(breed, 1000);
  

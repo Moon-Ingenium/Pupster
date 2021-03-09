@@ -8,9 +8,11 @@ import API from "../utils/API";
 
 const styles = {
     container: {
+        margin: 30,
         padding: 30,
         margin: "auto",
         width: "50%",
+        display: "block",
         justifyContent: "center"
     }
 }
@@ -45,8 +47,8 @@ function Discover() {
                         <h1 style={{ textAlign: "center" }}>Make New Pals</h1>
                         <h3 style={{ textAlign: "center" }}>Thumbs up on any pups you'd like to meet!</h3>
                         <Image style={{ maxWidth: 300, maxHeight: "auto" }} src={image} alt="dog" />
-                        <Button data-value="picked" onClick={handleChange}>thumbs up</Button>
-                        <Button data-value="dislike" onClick={handleChange} >thumbs down </Button>
+                        <Button style = {{display: "flex", justifyContent: "center", alignItems: "center", padding: 20}}data-value="picked" onClick={handleChange}>thumbs up</Button>
+                        <Button style = {{display: "flex", justifyContent: "center", alignItems: "center", padding: 20}}data-value="dislike" onClick={handleChange} >thumbs down </Button>
                         <h1 style={{ textAlign: "center" }} >Made Friends with {number} pups so far!</h1>
                         
                     </Container>
