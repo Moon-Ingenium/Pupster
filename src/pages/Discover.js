@@ -41,10 +41,10 @@ function Discover() {
     ;
     let alertTrue = match;
     const renderAlert = () => {
-        if (match) {
-            return <Alert class="alert alert-success" >Yey you matched</Alert>
+        if (match===true) {
+            return <Alert role="alert" class="alert alert-success" >You matched!</Alert>
         } else {
-            return <Alert class="alert alert-danger">Boo You're a Monster!</Alert>
+            return <Alert role="alert" class="alert alert-danger">You're a Monster!</Alert>
         }
 
     }
