@@ -8,7 +8,7 @@ function Nav() {
             <nav className="navbar navbar-light bg-light">
                 <div className="container">
                 <Link to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
-                        Home
+                        Pupster
                     </Link>
                     <ul className="nav nav-tabs">
                         <li className="nav-item">

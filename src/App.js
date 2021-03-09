@@ -11,12 +11,10 @@ function App() {
     <Router>
       <>
       <Nav/>
-      <Switch>
 <Route exact path = "/" component = {About}/>
 <Route exact path = "/about" component = {About}/>
 <Route exact path = "/search" component = {Search}/>
 <Route exact path = "/discover" component = {Discover}/>
-</Switch>
 </>
 </Router>
   );

@@ -28,7 +28,7 @@ function Search() {
 
     useEffect(() => {
         API.generateSearch(breed).then((res) => {
-            if(res.data.status === "error"){
+            if(!res){
                 throw new Error ("No Results Found")
             }
             setResults(res.data.message);
